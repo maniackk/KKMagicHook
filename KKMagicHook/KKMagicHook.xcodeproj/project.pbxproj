@@ -18,12 +18,12 @@
 		383159242424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 383159152424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s */; };
 		383159252424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 383159162424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m */; };
 		383159272424CF3B00D7DEC2 /* TPRecordHierarchyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3831591A2424CF3B00D7DEC2 /* TPRecordHierarchyModel.m */; };
-		383159282424CF3B00D7DEC2 /* TPStaticLibCallTrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 3831591B2424CF3B00D7DEC2 /* TPStaticLibCallTrace.c */; };
 		383159292424CF3B00D7DEC2 /* TPRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3831591C2424CF3B00D7DEC2 /* TPRecordModel.m */; };
 		3831592A2424CF3B00D7DEC2 /* TPExpandIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3831591E2424CF3B00D7DEC2 /* TPExpandIcon.png */; };
 		3831592B2424CF3B00D7DEC2 /* TPNOExpandIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3831591F2424CF3B00D7DEC2 /* TPNOExpandIcon.png */; };
 		3831592C2424CF3B00D7DEC2 /* TimeProfilerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 383159212424CF3B00D7DEC2 /* TimeProfilerVC.m */; };
 		383159452424D5A700D7DEC2 /* libstaticLib-arm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 383159442424D5A700D7DEC2 /* libstaticLib-arm64.a */; };
+		383159482424F0EF00D7DEC2 /* MHCallTrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 383159472424F0EF00D7DEC2 /* MHCallTrace.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +42,10 @@
 		383159112424CF3B00D7DEC2 /* TPRecordHierarchyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRecordHierarchyModel.h; sourceTree = "<group>"; };
 		383159122424CF3B00D7DEC2 /* TPRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRecordCell.m; sourceTree = "<group>"; };
 		383159132424CF3B00D7DEC2 /* TPRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRecordModel.h; sourceTree = "<group>"; };
-		383159142424CF3B00D7DEC2 /* TPStaticLibCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPStaticLibCallTrace.h; sourceTree = "<group>"; };
 		383159152424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "hookObjcMsgSend-arm64.s"; sourceTree = "<group>"; };
 		383159162424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CallRecordShake.m"; sourceTree = "<group>"; };
 		383159172424CF3B00D7DEC2 /* TimeProfilerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeProfilerVC.h; sourceTree = "<group>"; };
 		3831591A2424CF3B00D7DEC2 /* TPRecordHierarchyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRecordHierarchyModel.m; sourceTree = "<group>"; };
-		3831591B2424CF3B00D7DEC2 /* TPStaticLibCallTrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPStaticLibCallTrace.c; sourceTree = "<group>"; };
 		3831591C2424CF3B00D7DEC2 /* TPRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRecordModel.m; sourceTree = "<group>"; };
 		3831591E2424CF3B00D7DEC2 /* TPExpandIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPExpandIcon.png; sourceTree = "<group>"; };
 		3831591F2424CF3B00D7DEC2 /* TPNOExpandIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPNOExpandIcon.png; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		383159222424CF3B00D7DEC2 /* UIWindow+CallRecordShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CallRecordShake.h"; sourceTree = "<group>"; };
 		383159432424D5A700D7DEC2 /* staticLib_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticLib_arm64.h; sourceTree = "<group>"; };
 		383159442424D5A700D7DEC2 /* libstaticLib-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libstaticLib-arm64.a"; sourceTree = "<group>"; };
+		383159462424F0EF00D7DEC2 /* MHCallTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHCallTrace.h; sourceTree = "<group>"; };
+		383159472424F0EF00D7DEC2 /* MHCallTrace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MHCallTrace.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 		383159102424CF3B00D7DEC2 /* MagicHook */ = {
 			isa = PBXGroup;
 			children = (
-				383159142424CF3B00D7DEC2 /* TPStaticLibCallTrace.h */,
-				3831591B2424CF3B00D7DEC2 /* TPStaticLibCallTrace.c */,
+				383159462424F0EF00D7DEC2 /* MHCallTrace.h */,
+				383159472424F0EF00D7DEC2 /* MHCallTrace.c */,
 				383159112424CF3B00D7DEC2 /* TPRecordHierarchyModel.h */,
 				3831591A2424CF3B00D7DEC2 /* TPRecordHierarchyModel.m */,
 				383159202424CF3B00D7DEC2 /* TPRecordCell.h */,
@@ -224,9 +224,9 @@
 				3831590A2424CEEA00D7DEC2 /* main.m in Sources */,
 				383159292424CF3B00D7DEC2 /* TPRecordModel.m in Sources */,
 				383158FC2424CEE800D7DEC2 /* SceneDelegate.m in Sources */,
-				383159282424CF3B00D7DEC2 /* TPStaticLibCallTrace.c in Sources */,
 				383159232424CF3B00D7DEC2 /* TPRecordCell.m in Sources */,
 				383159272424CF3B00D7DEC2 /* TPRecordHierarchyModel.m in Sources */,
+				383159482424F0EF00D7DEC2 /* MHCallTrace.c in Sources */,
 				383159242424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

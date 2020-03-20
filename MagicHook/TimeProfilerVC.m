@@ -8,7 +8,7 @@
 #ifdef __arm64__
 
 #import "TimeProfilerVC.h"
-#import "MHCallTrace.h"
+#import "TPStaticLibCallTrace.h"
 #import "TPRecordCell.h"
 #import "TPRecordModel.h"
 #import "TPRecordHierarchyModel.h"
