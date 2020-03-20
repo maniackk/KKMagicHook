@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		383158F92424CEE800D7DEC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 383158F82424CEE800D7DEC2 /* AppDelegate.m */; };
+		383158FC2424CEE800D7DEC2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 383158FB2424CEE800D7DEC2 /* SceneDelegate.m */; };
+		383158FF2424CEE800D7DEC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383158FE2424CEE800D7DEC2 /* ViewController.m */; };
+		383159022424CEE800D7DEC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383159002424CEE800D7DEC2 /* Main.storyboard */; };
+		383159042424CEEA00D7DEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383159032424CEEA00D7DEC2 /* Assets.xcassets */; };
+		383159072424CEEA00D7DEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383159052424CEEA00D7DEC2 /* LaunchScreen.storyboard */; };
+		3831590A2424CEEA00D7DEC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 383159092424CEEA00D7DEC2 /* main.m */; };
+		383159232424CF3B00D7DEC2 /* TPRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 383159122424CF3B00D7DEC2 /* TPRecordCell.m */; };
+		383159242424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 383159152424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s */; };
+		383159252424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 383159162424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m */; };
+		383159262424CF3B00D7DEC2 /* hookObjcMsgSend.py in Resources */ = {isa = PBXBuildFile; fileRef = 383159192424CF3B00D7DEC2 /* hookObjcMsgSend.py */; };
+		383159272424CF3B00D7DEC2 /* TPRecordHierarchyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3831591A2424CF3B00D7DEC2 /* TPRecordHierarchyModel.m */; };
+		383159282424CF3B00D7DEC2 /* TPStaticLibCallTrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 3831591B2424CF3B00D7DEC2 /* TPStaticLibCallTrace.c */; };
+		383159292424CF3B00D7DEC2 /* TPRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3831591C2424CF3B00D7DEC2 /* TPRecordModel.m */; };
+		3831592A2424CF3B00D7DEC2 /* TPExpandIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3831591E2424CF3B00D7DEC2 /* TPExpandIcon.png */; };
+		3831592B2424CF3B00D7DEC2 /* TPNOExpandIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3831591F2424CF3B00D7DEC2 /* TPNOExpandIcon.png */; };
+		3831592C2424CF3B00D7DEC2 /* TimeProfilerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 383159212424CF3B00D7DEC2 /* TimeProfilerVC.m */; };
+		383159452424D5A700D7DEC2 /* libstaticLib-arm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 383159442424D5A700D7DEC2 /* libstaticLib-arm64.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		383158F42424CEE800D7DEC2 /* KKMagicHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKMagicHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		383158F72424CEE800D7DEC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		383158F82424CEE800D7DEC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		383158FA2424CEE800D7DEC2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		383158FB2424CEE800D7DEC2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		383158FD2424CEE800D7DEC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		383158FE2424CEE800D7DEC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		383159012424CEE800D7DEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		383159032424CEEA00D7DEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		383159062424CEEA00D7DEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		383159082424CEEA00D7DEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383159092424CEEA00D7DEC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		383159112424CF3B00D7DEC2 /* TPRecordHierarchyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRecordHierarchyModel.h; sourceTree = "<group>"; };
+		383159122424CF3B00D7DEC2 /* TPRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRecordCell.m; sourceTree = "<group>"; };
+		383159132424CF3B00D7DEC2 /* TPRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRecordModel.h; sourceTree = "<group>"; };
+		383159142424CF3B00D7DEC2 /* TPStaticLibCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPStaticLibCallTrace.h; sourceTree = "<group>"; };
+		383159152424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "hookObjcMsgSend-arm64.s"; sourceTree = "<group>"; };
+		383159162424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CallRecordShake.m"; sourceTree = "<group>"; };
+		383159172424CF3B00D7DEC2 /* TimeProfilerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeProfilerVC.h; sourceTree = "<group>"; };
+		383159192424CF3B00D7DEC2 /* hookObjcMsgSend.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hookObjcMsgSend.py; sourceTree = "<group>"; };
+		3831591A2424CF3B00D7DEC2 /* TPRecordHierarchyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRecordHierarchyModel.m; sourceTree = "<group>"; };
+		3831591B2424CF3B00D7DEC2 /* TPStaticLibCallTrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPStaticLibCallTrace.c; sourceTree = "<group>"; };
+		3831591C2424CF3B00D7DEC2 /* TPRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRecordModel.m; sourceTree = "<group>"; };
+		3831591E2424CF3B00D7DEC2 /* TPExpandIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPExpandIcon.png; sourceTree = "<group>"; };
+		3831591F2424CF3B00D7DEC2 /* TPNOExpandIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TPNOExpandIcon.png; sourceTree = "<group>"; };
+		383159202424CF3B00D7DEC2 /* TPRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRecordCell.h; sourceTree = "<group>"; };
+		383159212424CF3B00D7DEC2 /* TimeProfilerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeProfilerVC.m; sourceTree = "<group>"; };
+		383159222424CF3B00D7DEC2 /* UIWindow+CallRecordShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CallRecordShake.h"; sourceTree = "<group>"; };
+		383159432424D5A700D7DEC2 /* staticLib_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticLib_arm64.h; sourceTree = "<group>"; };
+		383159442424D5A700D7DEC2 /* libstaticLib-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libstaticLib-arm64.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		383158F12424CEE800D7DEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383159452424D5A700D7DEC2 /* libstaticLib-arm64.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		383158EB2424CEE800D7DEC2 = {
+			isa = PBXGroup;
+			children = (
+				383158F62424CEE800D7DEC2 /* KKMagicHook */,
+				383158F52424CEE800D7DEC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		383158F52424CEE800D7DEC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				383158F42424CEE800D7DEC2 /* KKMagicHook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		383158F62424CEE800D7DEC2 /* KKMagicHook */ = {
+			isa = PBXGroup;
+			children = (
+				383159422424D5A700D7DEC2 /* lib */,
+				383159102424CF3B00D7DEC2 /* MagicHook */,
+				383158F72424CEE800D7DEC2 /* AppDelegate.h */,
+				383158F82424CEE800D7DEC2 /* AppDelegate.m */,
+				383158FA2424CEE800D7DEC2 /* SceneDelegate.h */,
+				383158FB2424CEE800D7DEC2 /* SceneDelegate.m */,
+				383158FD2424CEE800D7DEC2 /* ViewController.h */,
+				383158FE2424CEE800D7DEC2 /* ViewController.m */,
+				383159002424CEE800D7DEC2 /* Main.storyboard */,
+				383159032424CEEA00D7DEC2 /* Assets.xcassets */,
+				383159052424CEEA00D7DEC2 /* LaunchScreen.storyboard */,
+				383159082424CEEA00D7DEC2 /* Info.plist */,
+				383159092424CEEA00D7DEC2 /* main.m */,
+			);
+			path = KKMagicHook;
+			sourceTree = "<group>";
+		};
+		383159102424CF3B00D7DEC2 /* MagicHook */ = {
+			isa = PBXGroup;
+			children = (
+				383159142424CF3B00D7DEC2 /* TPStaticLibCallTrace.h */,
+				3831591B2424CF3B00D7DEC2 /* TPStaticLibCallTrace.c */,
+				383159112424CF3B00D7DEC2 /* TPRecordHierarchyModel.h */,
+				3831591A2424CF3B00D7DEC2 /* TPRecordHierarchyModel.m */,
+				383159202424CF3B00D7DEC2 /* TPRecordCell.h */,
+				383159122424CF3B00D7DEC2 /* TPRecordCell.m */,
+				383159132424CF3B00D7DEC2 /* TPRecordModel.h */,
+				3831591C2424CF3B00D7DEC2 /* TPRecordModel.m */,
+				383159222424CF3B00D7DEC2 /* UIWindow+CallRecordShake.h */,
+				383159162424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m */,
+				383159172424CF3B00D7DEC2 /* TimeProfilerVC.h */,
+				383159212424CF3B00D7DEC2 /* TimeProfilerVC.m */,
+				383159152424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s */,
+				383159182424CF3B00D7DEC2 /* script */,
+				3831591D2424CF3B00D7DEC2 /* icon */,
+			);
+			path = MagicHook;
+			sourceTree = "<group>";
+		};
+		383159182424CF3B00D7DEC2 /* script */ = {
+			isa = PBXGroup;
+			children = (
+				383159192424CF3B00D7DEC2 /* hookObjcMsgSend.py */,
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		3831591D2424CF3B00D7DEC2 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				3831591E2424CF3B00D7DEC2 /* TPExpandIcon.png */,
+				3831591F2424CF3B00D7DEC2 /* TPNOExpandIcon.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		383159422424D5A700D7DEC2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				383159432424D5A700D7DEC2 /* staticLib_arm64.h */,
+				383159442424D5A700D7DEC2 /* libstaticLib-arm64.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		383158F32424CEE800D7DEC2 /* KKMagicHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3831590D2424CEEA00D7DEC2 /* Build configuration list for PBXNativeTarget "KKMagicHook" */;
+			buildPhases = (
+				383158F02424CEE800D7DEC2 /* Sources */,
+				383158F12424CEE800D7DEC2 /* Frameworks */,
+				383158F22424CEE800D7DEC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKMagicHook;
+			productName = KKMagicHook;
+			productReference = 383158F42424CEE800D7DEC2 /* KKMagicHook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		383158EC2424CEE800D7DEC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "吴凯凯";
+				TargetAttributes = {
+					383158F32424CEE800D7DEC2 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 383158EF2424CEE800D7DEC2 /* Build configuration list for PBXProject "KKMagicHook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 383158EB2424CEE800D7DEC2;
+			productRefGroup = 383158F52424CEE800D7DEC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				383158F32424CEE800D7DEC2 /* KKMagicHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		383158F22424CEE800D7DEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383159072424CEEA00D7DEC2 /* LaunchScreen.storyboard in Resources */,
+				383159262424CF3B00D7DEC2 /* hookObjcMsgSend.py in Resources */,
+				383159042424CEEA00D7DEC2 /* Assets.xcassets in Resources */,
+				3831592B2424CF3B00D7DEC2 /* TPNOExpandIcon.png in Resources */,
+				383159022424CEE800D7DEC2 /* Main.storyboard in Resources */,
+				3831592A2424CF3B00D7DEC2 /* TPExpandIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		383158F02424CEE800D7DEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383158FF2424CEE800D7DEC2 /* ViewController.m in Sources */,
+				383158F92424CEE800D7DEC2 /* AppDelegate.m in Sources */,
+				383159252424CF3B00D7DEC2 /* UIWindow+CallRecordShake.m in Sources */,
+				3831592C2424CF3B00D7DEC2 /* TimeProfilerVC.m in Sources */,
+				3831590A2424CEEA00D7DEC2 /* main.m in Sources */,
+				383159292424CF3B00D7DEC2 /* TPRecordModel.m in Sources */,
+				383158FC2424CEE800D7DEC2 /* SceneDelegate.m in Sources */,
+				383159282424CF3B00D7DEC2 /* TPStaticLibCallTrace.c in Sources */,
+				383159232424CF3B00D7DEC2 /* TPRecordCell.m in Sources */,
+				383159272424CF3B00D7DEC2 /* TPRecordHierarchyModel.m in Sources */,
+				383159242424CF3B00D7DEC2 /* hookObjcMsgSend-arm64.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		383159002424CEE800D7DEC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				383159012424CEE800D7DEC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		383159052424CEEA00D7DEC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				383159062424CEEA00D7DEC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3831590B2424CEEA00D7DEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3831590C2424CEEA00D7DEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3831590E2424CEEA00D7DEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDDTC74SY4;
+				INFOPLIST_FILE = KKMagicHook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KKMagicHook/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.KKMagicHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3831590F2424CEEA00D7DEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QDDTC74SY4;
+				INFOPLIST_FILE = KKMagicHook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KKMagicHook/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.KKMagicHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		383158EF2424CEE800D7DEC2 /* Build configuration list for PBXProject "KKMagicHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3831590B2424CEEA00D7DEC2 /* Debug */,
+				3831590C2424CEEA00D7DEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3831590D2424CEEA00D7DEC2 /* Build configuration list for PBXNativeTarget "KKMagicHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3831590E2424CEEA00D7DEC2 /* Debug */,
+				3831590F2424CEEA00D7DEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 383158EC2424CEE800D7DEC2 /* Project object */;
+}
