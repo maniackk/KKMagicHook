@@ -1,12 +1,12 @@
 //
-//  TPStaticLibCallTrace.c
-//  staticHook
+//  MHCallTrace.c
+//  KKMagicHook
 //
-//  Created by 吴凯凯 on 2020/3/19.
+//  Created by 吴凯凯 on 2020/3/20.
 //  Copyright © 2020 吴凯凯. All rights reserved.
 //
 
-#include "TPStaticLibCallTrace.h"
+#include "MHCallTrace.h"
 
 #ifndef __arm64__
 // 模拟器 或者 iPhone5及更老iPhone设备，不是使用arm64

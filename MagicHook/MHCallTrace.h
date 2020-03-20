@@ -15,8 +15,8 @@ void setCostMinTime(uint64_t time);
 
 #else
 
-#ifndef TPStaticLibCallTrace_h
-#define TPStaticLibCallTrace_h
+#ifndef MHCallTrace_h
+#define MHCallTrace_h
 
 #include <stdio.h>
 #include <objc/objc.h>
@@ -42,6 +42,6 @@ void setCostMinTime(uint64_t time);
 
 
 
-#endif /* TPStaticLibCallTrace_h */
+#endif /* MHCallTrace_h */
 
 #endif
