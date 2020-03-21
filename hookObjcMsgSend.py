@@ -54,13 +54,29 @@ struct object_header {
 
 '''
 
+def deal_fat_file():
+    global staticLibPath, fatFilePath
+    fatFilePath = staticLibPath
+    (fatFileDir, fatFileName) = os.path.split(fatFilePath)
+    fatFileName = 'tmp-arm64-'+fatFileName
+    staticLibPath = os.path.join(fatFileDir, fatFileName)
+    os.system('lipo ' + fatFilePath + ' -thin ' + 'arm64 -output '+ staticLibPath)
+
+
+def replace_fat_file():
+    os.system('lipo '+fatFilePath+' -replace arm64 '+staticLibPath+' -output '+fatFilePath)
+    os.remove(staticLibPath)
+    
 
 def get_valid_staticLib_path():
     if not Path(staticLibPath).is_file():
         return False, 'invalid path, please input valid staticLib path!!!'
-    output = os.popen('lipo -detailed_info '+staticLibPath).read().strip()
+    output = os.popen('lipo -info '+staticLibPath).read().strip()
     if not output.endswith('architecture: arm64'):  # re.match(r'.*architecture: arm64$', output):
-        return False, 'invalid staticLib or not arm64(not fat file)'
+        if output.startswith('Architectures in the fat file:') and output.find('arm64'):
+            deal_fat_file()
+        else:
+            return False, 'invalid staticLib or fat file not contain arm64 lib'
     with open(staticLibPath, 'rb') as fileobj:
         magic = fileobj.read(8)
         (magic,) = struct.unpack('8s', magic)
@@ -152,9 +168,11 @@ def replace_Objc_MsgSend(fileLen):
     with open(staticLibPath, 'wb+') as fileobj:
         print('开始写入文件...')
         fileobj.write(bytes)
-        print('处理完了！！！')
+        
+    if len(fatFilePath) > 0:
+        replace_fat_file()
 
-
+    print('处理完了！！！')
 
 
 need_process_objFile = set() # set('xx1', 'xx2') 表示静态库中，仅xx1跟xx2需要处理
@@ -182,6 +200,7 @@ def process_object_file(name, location, size):
 
 # 静态库的路径
 staticLibPath = '完整的静态库路径'
+fatFilePath = str()
 # objc_msgSend被替换的名字（两者长度需一致）
 # hookObjcMsgSend-arm64.s里定义了函数名为hook_msgSend，如果修改脚本里的函数名，hookObjcMsgSend-arm64.s里的函数名，也需跟脚本保持一致
 # 建议不修改hook_msgSend
@@ -192,6 +211,7 @@ symtabList_loc_size = list()
 if __name__ == '__main__':
     # staticLibPath = '/Users/xx/xx/xx'.strip()
     staticLibPath = input('请输入静态库的路径：').strip()
+
     if not len(hook_msgSend_method_name) == len('objc_msgSend'):
         exit('need len(\'hook_msgSend\') == len(\'objc_msgSend\')!')
     isValid, desc = get_valid_staticLib_path()
